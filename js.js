@@ -3,7 +3,6 @@ function responsiveFn() {
 console.log(width);
   if (width < 970 || width==980 ) {
      $('#move').prependTo( $('#bottom>div') );
-
   }
  }
 
