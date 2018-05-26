@@ -22,9 +22,11 @@
 }
 a.carousel-control-next {
 content: url("prev.png");
+margin-top : 70px  !important;
 }
 a.carousel-control-prev {
 content: url("next.png");
+margin-top : 70px  !important;
 }
 .carousel-indicators li {
 
@@ -65,7 +67,7 @@ content: url("next.png");
     @media (min-width: 768px) {
         .card-columns {
             column-count: 2 !important;
-        
+
         }
     }
 
