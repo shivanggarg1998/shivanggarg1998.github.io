@@ -2,12 +2,10 @@ function responsiveFn() {
      width = $( window ).width();
 console.log(width);
   if (width < 970 || width==980 ) {
+    //shifting of move div to left
      $('#move').prependTo( $('#bottom>div') );
   }
  }
-
-
-
 
 
   $(document).ready(function(){

@@ -64,8 +64,24 @@ margin-top : 70px  !important;
 {
   display: flex;
 }
+/* adjust the move div in mobile view */
+@media (max-width: 576px) {
 
-/* adjusting the number of colums of cards*/
+    #move {
+      display : inline-flex;
+}
+#move .btn-primary{
+ font-size: 0px;
+ height: 39px;
+ margin-top: 8px;
+}
+#move i{
+  font-size: initial !important;
+}
+#move input {
+ width : 70% !important;
+}
+/* adjusting the number of colunms of cards*/
 
     @media (min-width: 576px) {
         .card-columns {
@@ -80,12 +96,25 @@ margin-top : 70px  !important;
         }
 
     }
-    @media (max-width: 992px) {
+    @media (min-width: 992px) {
+        .card-columns {
+            column-count: 3 !important;
+        }
 
+    }
+
+    @media (min-width: 1200px) {
+        .card-columns {
+            column-count: 4 !important;
+        }
+    }
+    @media (max-width: 992px) {
+/* adjusting the container in mobile view */
 .container
 {
   width: 100% !important;
 }
+/* adjusting the dropdown in moblie view */
         .dropdown:hover>.dropdown-menu {
           display: flex;
           flex-flow : row wrap !important;
@@ -128,17 +157,4 @@ margin-top : 70px  !important;
            }
 
 
-    }
-
-    @media (min-width: 992px) {
-        .card-columns {
-            column-count: 3 !important;
-        }
-
-    }
-
-    @media (min-width: 1200px) {
-        .card-columns {
-            column-count: 4 !important;
-        }
     }
