@@ -2,7 +2,7 @@
   $(document).ready(function(){
 
     $(".fixed-top").hide();
-    $('.card').css({opacity: 0.0, visibility: "visible",bottom : "-10px"}).animate({opacity: 1.0,bottom : "0px"},1500);
+    $('.card').css({opacity: 0.0, visibility: "visible",bottom : "-10px"}).animate({opacity: 1.0,bottom : "0px"},3000);
 
     $(function () {
         $(window).scroll(function () {
