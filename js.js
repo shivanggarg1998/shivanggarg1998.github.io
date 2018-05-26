@@ -1,13 +1,27 @@
+function responsiveFn() {
+     width = $( window ).width();
+console.log(width);
+  if (width < 970 || width==980 ) {
+     $('#move').prependTo( $('#bottom>div') );
+
+  }
+ }
+
+
+
+
 
   $(document).ready(function(){
-
+//hiding the top navbar
     $(".fixed-top").hide();
-    $('.card').css({opacity: 0.0, visibility: "visible",bottom : "-10px"}).animate({opacity: 1.0,bottom : "0px"},3000);
+    // fading effect to cards
+    $('.card').css({opacity: 0.0, visibility: "visible",bottom : "-15px"}).animate({opacity: 1.0,bottom : "0px"},2000);
+   $(window).ready(responsiveFn).resize(responsiveFn);
+
 
     $(function () {
         $(window).scroll(function () {
-          var scroll = $(this).scrollTop();
-          console.log(scroll);
+          //showing the navbar
           if ($(this).scrollTop() > 150) {
                 $('.fixed-top').slideDown();
             } else {

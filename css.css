@@ -1,11 +1,14 @@
+/* Customizing the dropdown in navbar */
 .dropdown:hover>.dropdown-menu {
   display: block;
+  margin-left : 20px !important;
 }
 .dropdown > .dropdown-toggle:active {
     pointer-events: none;
 }
-.dropdown>.dropdown-menu { margin: 0px; }
+.dropdown>.dropdown-menu { margin: 0px;}
 
+/* shadow effects to cards */
 .card{
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -16,10 +19,21 @@
     border-color: #9ecaed;
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
 }
+/* shadow effects to navbar */
 #bottom
 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
 }
+#top {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#top .nav-link
+{
+  color: black;
+  padding: 6px 30px 6px 30px;
+}
+/* changing the default arrows and indicator*/
 a.carousel-control-next {
 content: url("prev.png");
 margin-top : 70px  !important;
@@ -36,27 +50,22 @@ margin-top : 70px  !important;
 .carousel-indicators li.active {
     background-color: #000000 !important;
 }
+/* centering the text in card and modals */
 .card-text
 {
   text-align: center !important;
 }
-#top {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-#top a
-{
-  color: black;
-  padding: 10px 50px 10px 50px;
-}
+
 .modal {
   text-align: center;
 }
-.navbar-toggler
+
+#move
 {
-  color: black;
+  display: flex;
 }
 
+/* adjusting the number of colums of cards*/
 
     @media (min-width: 576px) {
         .card-columns {
@@ -69,12 +78,59 @@ margin-top : 70px  !important;
             column-count: 2 !important;
 
         }
+
+    }
+    @media (max-width: 992px) {
+
+        .dropdown:hover>.dropdown-menu {
+          display: flex;
+          flex-flow : row wrap !important;
+        }
+        #bottom .dropdown-menu
+        {
+          background-color: #343a40 !important;
+          border: 1px solid white ;
+
+        }
+.dropdown-menu{
+  padding: 0px 5px 0px 5px !important;
+}
+.dropdown-menu a
+{
+  padding: 15px 10px 15px 10px !important;
+}
+        #bottom .dropdown-menu a
+        {
+          color: white !important;
+
+        }
+
+        #bottom .dropdown-menu a:hover
+        {
+          background-color: #313131 !important;
+
+        }
+        #top .nav-link
+        {
+            padding: 10px 10px 10px 0px !important;
+        }
+        .dropdown > .dropdown-toggle:active {
+            pointer-events: none;
+        }
+        .dropdown>.dropdown-menu {
+          position: absolute !important;
+             left: 35% !important;
+             top: 0;
+           }
+
+
     }
 
     @media (min-width: 992px) {
         .card-columns {
             column-count: 3 !important;
         }
+
     }
 
     @media (min-width: 1200px) {
