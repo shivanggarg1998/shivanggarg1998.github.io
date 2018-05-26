@@ -1,0 +1,82 @@
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+.dropdown>.dropdown-menu { margin: 0px; }
+
+.card{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover
+{
+  outline: none;
+    border-color: #9ecaed;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+#bottom
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+a.carousel-control-next {
+content: url("prev.png");
+}
+a.carousel-control-prev {
+content: url("next.png");
+}
+.carousel-indicators li {
+
+    background-color: #726D6C !important;
+
+}
+.carousel-indicators li.active {
+    background-color: #000000 !important;
+}
+.card-text
+{
+  text-align: center !important;
+}
+#top {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#top a
+{
+  color: black;
+  padding: 10px 50px 10px 50px;
+}
+.modal {
+  text-align: center;
+}
+.navbar-toggler
+{
+  color: black;
+}
+
+
+    @media (min-width: 576px) {
+        .card-columns {
+            column-count: 1 !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .card-columns {
+            column-count: 2 !important;
+        
+        }
+    }
+
+    @media (min-width: 992px) {
+        .card-columns {
+            column-count: 3 !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .card-columns {
+            column-count: 4 !important;
+        }
+    }
